@@ -1,7 +1,16 @@
 {
   "name": "whiplash",
   "version": "0.0.1",
-  "private": false,
+  "description": "Whiplash API Library",
+  "author": "Thomas Reggi",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/incubaker/whiplash.git"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
   "dependencies": {
     "request": "~2.12.0",
     "dotty": "0.0.1"
