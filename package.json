@@ -1,0 +1,9 @@
+{
+  "name": "whiplash",
+  "version": "0.0.1",
+  "private": false,
+  "dependencies": {
+    "request": "~2.12.0",
+    "dotty": "0.0.1"
+  }
+}
