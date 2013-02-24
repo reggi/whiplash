@@ -86,21 +86,18 @@ The `callbacks` param is a object, which needs to contain both `success` and `er
         whiplash.request({
             "method":"DELETE",
             "url":"orders/"+id
-        },{
-            success:function(body){
-				console.log(body)
-            },
-            error:function(error, body){
-                console.log(error);
-                console.log(body);
-            }
-        });
+        }, function(err, body){
+			if(err) console.log(err);
+			console.log(body);
+		});
 
 ---
 
 ## Complete Example
 
 The following example returns all `orders`.
+
+# OLD
 
 	var Whiplash = new require("whiplash");
 	var whiplash = new Whiplash("j54kjh83ij2h23");
@@ -114,5 +111,11 @@ The following example returns all `orders`.
 		}
 	});
  
+# New
 
-
+	var Whiplash = new require("whiplash");
+	var whiplash = new Whiplash("j54kjh83ij2h23");
+	whiplash.request("orders", function(err, body){
+		if(err) console.log(err);
+		console.log(body);
+	});
