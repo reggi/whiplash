@@ -1,0 +1,94 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@1.1.61
+3 info using node@v0.8.6
+4 verbose publish [ '.' ]
+5 verbose read json /Users/thomas/fixture/node_modules/whiplash/package.json
+6 verbose cache add [ '.', null ]
+7 silly cache add name=undefined spec="." args=[".",null]
+8 verbose parsed url { pathname: '.', path: '.', href: '.' }
+9 silly lockFile 3a52ce78- .
+10 verbose lock . /Users/thomas/.npm/3a52ce78-.lock
+11 verbose read json package.json
+12 verbose tar pack [ '/var/folders/jt/043tcrbs3m386w8kxjlf3jz00000gn/T/npm-49230/1362076842361-0.08378467941656709/tmp.tgz',
+12 verbose tar pack   '.' ]
+13 verbose tarball /var/folders/jt/043tcrbs3m386w8kxjlf3jz00000gn/T/npm-49230/1362076842361-0.08378467941656709/tmp.tgz
+14 verbose folder .
+15 info prepublish whiplash@0.0.1
+16 silly lockFile 9c186aba-2361-0-08378467941656709-tmp-tgz /var/folders/jt/043tcrbs3m386w8kxjlf3jz00000gn/T/npm-49230/1362076842361-0.08378467941656709/tmp.tgz
+17 verbose lock /var/folders/jt/043tcrbs3m386w8kxjlf3jz00000gn/T/npm-49230/1362076842361-0.08378467941656709/tmp.tgz /Users/thomas/.npm/9c186aba-2361-0-08378467941656709-tmp-tgz.lock
+18 silly lockFile 9c186aba-2361-0-08378467941656709-tmp-tgz /var/folders/jt/043tcrbs3m386w8kxjlf3jz00000gn/T/npm-49230/1362076842361-0.08378467941656709/tmp.tgz
+19 verbose tar unpack /var/folders/jt/043tcrbs3m386w8kxjlf3jz00000gn/T/npm-49230/1362076842361-0.08378467941656709/tmp.tgz
+20 silly lockFile 8fa1dda4-2361-0-08378467941656709-package /var/folders/jt/043tcrbs3m386w8kxjlf3jz00000gn/T/npm-49230/1362076842361-0.08378467941656709/package
+21 verbose lock /var/folders/jt/043tcrbs3m386w8kxjlf3jz00000gn/T/npm-49230/1362076842361-0.08378467941656709/package /Users/thomas/.npm/8fa1dda4-2361-0-08378467941656709-package.lock
+22 silly gunzTarPerm modes [ '755', '644' ]
+23 silly gunzTarPerm extractEntry package.json
+24 silly gunzTarPerm extractEntry .npmignore
+25 silly gunzTarPerm extractEntry example.js
+26 silly gunzTarPerm extractEntry index.js
+27 silly gunzTarPerm extractEntry readme.md
+28 verbose read json /var/folders/jt/043tcrbs3m386w8kxjlf3jz00000gn/T/npm-49230/1362076842361-0.08378467941656709/package/package.json
+29 silly lockFile 8fa1dda4-2361-0-08378467941656709-package /var/folders/jt/043tcrbs3m386w8kxjlf3jz00000gn/T/npm-49230/1362076842361-0.08378467941656709/package
+30 verbose from cache /var/folders/jt/043tcrbs3m386w8kxjlf3jz00000gn/T/npm-49230/1362076842361-0.08378467941656709/package/package.json
+31 verbose tar pack [ '/Users/thomas/.npm/whiplash/0.0.1/package.tgz',
+31 verbose tar pack   '/var/folders/jt/043tcrbs3m386w8kxjlf3jz00000gn/T/npm-49230/1362076842361-0.08378467941656709/package' ]
+32 verbose tarball /Users/thomas/.npm/whiplash/0.0.1/package.tgz
+33 verbose folder /var/folders/jt/043tcrbs3m386w8kxjlf3jz00000gn/T/npm-49230/1362076842361-0.08378467941656709/package
+34 silly lockFile 3eff08cd-s-npm-whiplash-0-0-1-package-tgz /Users/thomas/.npm/whiplash/0.0.1/package.tgz
+35 verbose lock /Users/thomas/.npm/whiplash/0.0.1/package.tgz /Users/thomas/.npm/3eff08cd-s-npm-whiplash-0-0-1-package-tgz.lock
+36 silly lockFile 3eff08cd-s-npm-whiplash-0-0-1-package-tgz /Users/thomas/.npm/whiplash/0.0.1/package.tgz
+37 silly lockFile d3f6b937-homas-npm-whiplash-0-0-1-package /Users/thomas/.npm/whiplash/0.0.1/package
+38 verbose lock /Users/thomas/.npm/whiplash/0.0.1/package /Users/thomas/.npm/d3f6b937-homas-npm-whiplash-0-0-1-package.lock
+39 silly lockFile d3f6b937-homas-npm-whiplash-0-0-1-package /Users/thomas/.npm/whiplash/0.0.1/package
+40 verbose tar unpack /Users/thomas/.npm/whiplash/0.0.1/package.tgz
+41 silly lockFile d3f6b937-homas-npm-whiplash-0-0-1-package /Users/thomas/.npm/whiplash/0.0.1/package
+42 verbose lock /Users/thomas/.npm/whiplash/0.0.1/package /Users/thomas/.npm/d3f6b937-homas-npm-whiplash-0-0-1-package.lock
+43 silly gunzTarPerm modes [ '755', '644' ]
+44 silly gunzTarPerm extractEntry package.json
+45 silly gunzTarPerm extractEntry .npmignore
+46 silly gunzTarPerm extractEntry example.js
+47 silly gunzTarPerm extractEntry index.js
+48 silly gunzTarPerm extractEntry readme.md
+49 verbose read json /Users/thomas/.npm/whiplash/0.0.1/package/package.json
+50 silly lockFile d3f6b937-homas-npm-whiplash-0-0-1-package /Users/thomas/.npm/whiplash/0.0.1/package
+51 silly shasum updated bytes 2080
+52 info shasum dd1be38e87145503f3cea1c9f7f558bb2493bf74
+52 info shasum /Users/thomas/.npm/whiplash/0.0.1/package.tgz
+53 verbose from cache /Users/thomas/.npm/whiplash/0.0.1/package/package.json
+54 verbose chmod /Users/thomas/.npm/whiplash/0.0.1/package.tgz 644
+55 verbose chown /Users/thomas/.npm/whiplash/0.0.1/package.tgz [ 501, 20 ]
+56 silly lockFile 3a52ce78- .
+57 silly publish { name: 'whiplash',
+57 silly publish   version: '0.0.1',
+57 silly publish   description: 'Whiplash API Library',
+57 silly publish   author: { name: 'Thomas Reggi' },
+57 silly publish   main: 'index.js',
+57 silly publish   repository: { type: 'git', url: 'git://github.com/incubaker/whiplash.git' },
+57 silly publish   engines: { node: '>=0.8.0' },
+57 silly publish   dependencies: { request: '~2.12.0', dotty: '0.0.1' },
+57 silly publish   readme: '# Whiplash Node.js API Libary\n\nThis is a very small API library for [Whiplash](https://www.whiplashmerch.com/), you can find the documentation [here](https://www.whiplashmerch.com/documentation/api).\n\n## Installation\n\n[npmjs.org/package/whiplash](https://npmjs.org/package/whiplash)\n\n    npm install whiplash\n\n---\n\n## Usage\n\n    var whiplash = new require("whiplash")();\n\nor \n    \n    var Whiplash = new require("whiplash");\n    var whiplash = new Whiplash();\n\n---\n\n## Parameters\n\nThe `new Whiplash()` object can take a couple of different argument sets.\n\n### Nothing\n\nNo arguments, like the following, will connect you to with a test key and the testing url.\n\n\tvar whiplash = new Whiplash();\n\n### String\n\nA key in the form of a `string`, like so, `version` is automatically `1` and `test` is automatically `false`.\n\t\n\tvar whiplash = new Whiplash("j54kjh83ij2h23");\n\n### Object\n\t\nA key in the form of a `object, like so.\n\n\tvar whiplash = new Whiplash({\n\t\t"key": "j54kjh83ij2h23",\n\t\t"version": "1",\n\t\t"test": true\n\t});\n\n---\t\n\n## Request\n\nThe last function you\'ll ever need `whiplash.request()`. This function is very similar to the object above in terms of parameters.\n\n\t\n\twhiplash.request(options,callbacks);\n\t\nThe function takes two parameters.\n\n### Option Parameter\n\n#### String\n\nIf options is a string it will be the same as `options.url` see below.\n\n#### Object\n\nThere is only one mandatory value if you use options as an object and that is `options.url`. No preceding `/` is needed when specifying a path (e.g. `orders`, `orders/originator`)\n\t\nYou can specify `options.method` and `query`.\n\nThe defaults are as follows:\n\n\tvar options = {\n\t\t"method":"GET",\n\t\t"query":{},\n\t}\n\n### Callbacks Parameter\n\nThe `callbacks` param is a object, which needs to contain both `success` and `error`.\n\n### Example\n\n        whiplash.request({\n            "method":"DELETE",\n            "url":"orders/"+id\n        }, function(err, body){\n\t\t\tif(err) console.log(err);\n\t\t\tconsole.log(body);\n\t\t});\n\n---\n\n## Complete Example\n\nThe following example returns all `orders`.\n\n# OLD\n\n\tvar Whiplash = new require("whiplash");\n\tvar whiplash = new Whiplash("j54kjh83ij2h23");\n\twhiplash.request("orders",{\n\t\tsuccess:function(body){\n\t\t\tconsole.log(body)\n\t\t},\n\t\terror:function(error, body){\n\t\t\tconsole.log(error);\n\t\t\tconsole.log(body);\n\t\t}\n\t});\n \n# New\n\n\tvar Whiplash = new require("whiplash");\n\tvar whiplash = new Whiplash("j54kjh83ij2h23");\n\twhiplash.request("orders", function(err, body){\n\t\tif(err) console.log(err);\n\t\tconsole.log(body);\n\t});',
+57 silly publish   _id: 'whiplash@0.0.1',
+57 silly publish   dist: { shasum: 'dd1be38e87145503f3cea1c9f7f558bb2493bf74' } }
+58 verbose url raw whiplash
+59 verbose url resolving [ 'http://registry.npmjs.org/', './whiplash' ]
+60 verbose url resolved http://registry.npmjs.org/whiplash
+61 info trying registry request attempt 1 at 12:40:49
+62 http PUT http://registry.npmjs.org/whiplash
+63 http 409 http://registry.npmjs.org/whiplash
+64 verbose url raw whiplash
+65 verbose url resolving [ 'http://registry.npmjs.org/', './whiplash' ]
+66 verbose url resolved http://registry.npmjs.org/whiplash
+67 info trying registry request attempt 1 at 12:40:59
+68 http GET http://registry.npmjs.org/whiplash
+69 http 200 http://registry.npmjs.org/whiplash
+70 error publish fail Cannot publish over existing version.
+70 error publish fail Bump the 'version' field, set the --force flag, or
+70 error publish fail     npm unpublish 'whiplash@0.0.1'
+70 error publish fail and try again
+71 error System Darwin 11.4.2
+72 error command "node" "/usr/local/bin/npm" "publish"
+73 error cwd /Users/thomas/fixture/node_modules/whiplash
+74 error node -v v0.8.6
+75 error npm -v 1.1.61
+76 error code EPUBLISHCONFLICT
+77 verbose exit [ 1, true ]
