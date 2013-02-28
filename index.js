@@ -56,10 +56,10 @@ var Whiplash = function(config){
         request(options,function(error,response,body){
             if(error){
                 callback(error, body);
-            }else if(response && response.statusCode !== 200){
-                callback("whiplash order response code :"+ response.statusCode, body);
+            }else if(response && dotty.exists(response, "statusCode")){
+                callback(false, body, response.statusCode);
             }else{
-                callback(false,body);
+                callback("no response status code", body);
             }
         });
         
