@@ -1,22 +1,22 @@
 {
-    "name": "whiplash",
-    "version": "0.0.3",
-    "description": "Whiplash API Library",
-    "author": {
-        "name": "Thomas Reggi"
-    },
-    "main": "index.js",
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/incubaker/whiplash.git"
-    },
-    "engines": {
-        "node": ">=0.8.0"
-    },
-    "dependencies": {
-        "request": "~2.12.0",
-        "dotty": "0.0.1",
-        "underscore": "1.6.0"
-    },
-    "readme": "# Whiplash Node.js API Libary\n\nThis is a very small API library for [Whiplash](https://www.whiplashmerch.com/), you can find the documentation [here](https://www.whiplashmerch.com/documentation/api).\n\n## Installation\n\n[npmjs.org/package/whiplash](https://npmjs.org/package/whiplash)\n\n    npm install whiplash\n\n---\n\n## Usage\n\n    var whiplash = new require(\"whiplash\")();\n\nor \n    \n    var Whiplash = new require(\"whiplash\");\n    var whiplash = new Whiplash();\n\n---\n\n## Parameters\n\nThe `new Whiplash()` object can take a couple of different argument sets.\n\n### Nothing\n\nNo arguments, like the following, will connect you to with a test key and the testing url.\n\n\tvar whiplash = new Whiplash();\n\n### String\n\nA key in the form of a `string`, like so, `version` is automatically `1` and `test` is automatically `false`.\n\t\n\tvar whiplash = new Whiplash(\"j54kjh83ij2h23\");\n\n### Object\n\t\nA key in the form of a `object, like so.\n\n\tvar whiplash = new Whiplash({\n\t\t\"key\": \"j54kjh83ij2h23\",\n\t\t\"version\": \"1\",\n\t\t\"test\": true\n\t});\n\n---\t\n\n## Request\n\nThe last function you'll ever need `whiplash.request()`. This function is very similar to the object above in terms of parameters.\n\n\t\n\twhiplash.request(options,callbacks);\n\t\nThe function takes two parameters.\n\n### Option Parameter\n\n#### String\n\nIf options is a string it will be the same as `options.url` see below.\n\n#### Object\n\nThere is only one mandatory value if you use options as an object and that is `options.url`. No preceding `/` is needed when specifying a path (e.g. `orders`, `orders/originator`)\n\t\nYou can specify `options.method` and `query`.\n\nThe defaults are as follows:\n\n\tvar options = {\n\t\t\"method\":\"GET\",\n\t\t\"query\":{},\n\t}\n\n### Callbacks Parameter\n\nThe `callbacks` param is a object, which needs to contain both `success` and `error`.\n\n### Example\n\n        whiplash.request({\n            \"method\":\"DELETE\",\n            \"url\":\"orders/\"+id\n        }, function(err, body){\n\t\t\tif(err) console.log(err);\n\t\t\tconsole.log(body);\n\t\t});\n\n---\n\n## Complete Example\n\nThe following example returns all `orders`.\n\n# OLD\n\n\tvar Whiplash = new require(\"whiplash\");\n\tvar whiplash = new Whiplash(\"j54kjh83ij2h23\");\n\twhiplash.request(\"orders\",{\n\t\tsuccess:function(body){\n\t\t\tconsole.log(body)\n\t\t},\n\t\terror:function(error, body){\n\t\t\tconsole.log(error);\n\t\t\tconsole.log(body);\n\t\t}\n\t});\n \n# New\n\n\tvar Whiplash = new require(\"whiplash\");\n\tvar whiplash = new Whiplash(\"j54kjh83ij2h23\");\n\twhiplash.request(\"orders\", function(err, body){\n\t\tif(err) console.log(err);\n\t\tconsole.log(body);\n\t});"
+  "name": "whiplash",
+  "version": "0.0.4",
+  "description": "Whiplash API Library",
+  "author": {
+    "name": "Thomas Reggi"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/incubaker/whiplash.git"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "dependencies": {
+    "request": "~2.12.0",
+    "dotty": "0.0.1",
+    "underscore": "1.6.0"
+  },
+  "readme": "# Whiplash Node.js API Libary\n\nThis is a very small API library for [Whiplash](https://www.whiplashmerch.com/), you can find the documentation [here](https://www.whiplashmerch.com/documentation/api).\n\n## Installation\n\n[npmjs.org/package/whiplash](https://npmjs.org/package/whiplash)\n\n    npm install whiplash\n\n---\n\n## Usage\n\n    var whiplash = new require(\"whiplash\")();\n\nor \n    \n    var Whiplash = new require(\"whiplash\");\n    var whiplash = new Whiplash();\n\n---\n\n## Parameters\n\nThe `new Whiplash()` object can take a couple of different argument sets.\n\n### Nothing\n\nNo arguments, like the following, will connect you to with a test key and the testing url.\n\n\tvar whiplash = new Whiplash();\n\n### String\n\nA key in the form of a `string`, like so, `version` is automatically `1` and `test` is automatically `false`.\n\t\n\tvar whiplash = new Whiplash(\"j54kjh83ij2h23\");\n\n### Object\n\t\nA key in the form of a `object, like so.\n\n\tvar whiplash = new Whiplash({\n\t\t\"key\": \"j54kjh83ij2h23\",\n\t\t\"version\": \"1\",\n\t\t\"test\": true\n\t});\n\n---\t\n\n## Request\n\nThe last function you'll ever need `whiplash.request()`. This function is very similar to the object above in terms of parameters.\n\n\t\n\twhiplash.request(options,callbacks);\n\t\nThe function takes two parameters.\n\n### Option Parameter\n\n#### String\n\nIf options is a string it will be the same as `options.url` see below.\n\n#### Object\n\nThere is only one mandatory value if you use options as an object and that is `options.url`. No preceding `/` is needed when specifying a path (e.g. `orders`, `orders/originator`)\n\t\nYou can specify `options.method` and `query`.\n\nThe defaults are as follows:\n\n\tvar options = {\n\t\t\"method\":\"GET\",\n\t\t\"query\":{},\n\t}\n\n### Callbacks Parameter\n\nThe `callbacks` param is a object, which needs to contain both `success` and `error`.\n\n### Example\n\n        whiplash.request({\n            \"method\":\"DELETE\",\n            \"url\":\"orders/\"+id\n        }, function(err, body){\n\t\t\tif(err) console.log(err);\n\t\t\tconsole.log(body);\n\t\t});\n\n---\n\n## Complete Example\n\nThe following example returns all `orders`.\n\n# OLD\n\n\tvar Whiplash = new require(\"whiplash\");\n\tvar whiplash = new Whiplash(\"j54kjh83ij2h23\");\n\twhiplash.request(\"orders\",{\n\t\tsuccess:function(body){\n\t\t\tconsole.log(body)\n\t\t},\n\t\terror:function(error, body){\n\t\t\tconsole.log(error);\n\t\t\tconsole.log(body);\n\t\t}\n\t});\n \n# New\n\n\tvar Whiplash = new require(\"whiplash\");\n\tvar whiplash = new Whiplash(\"j54kjh83ij2h23\");\n\twhiplash.request(\"orders\", function(err, body){\n\t\tif(err) console.log(err);\n\t\tconsole.log(body);\n\t});"
 }
